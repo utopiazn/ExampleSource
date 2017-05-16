@@ -7,7 +7,7 @@
 	<title>인사</title>
 </head>
 <body>
-	인사말0:<strong>${greeting}</strong>
+	인사말:<strong>${greeting}</strong>
 
 </body>
 

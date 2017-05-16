@@ -1,0 +1,7 @@
+
+1. 패키지 kh01\spring\controller
+스프링 기본예제 
+WebContent\WEB-INF\view\hello.jsp  <--동작 확인
+실제 호출 하는 법.
+http://localhost:8080/SpringEx/hello.do
+
