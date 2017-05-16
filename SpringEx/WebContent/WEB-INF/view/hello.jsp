@@ -4,7 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charest=UTF-8">
-	<title>인사</title>
+	<title>KH01_인사</title>
 </head>
 <body>
 	인사말:<strong>${greeting}</strong>
