@@ -1266,7 +1266,7 @@
 
 	   http://localhost:8080/SpringMVC01/search/internal.do?query=q&p=2
 	   http://localhost:8080/SpringMVC01/search/internal.do?query=q
-	   http://localhost:8080/SpringMVC01/search/internal.do
+	   http://localhost:8080/SpringMVC01/search/internal.do  (query 값이 없어서 오류)
 
 	   http://localhost:8080/SpringMVC01/search/external.do?query=p&p=22
 	   http://localhost:8080/SpringMVC01/search/external.do?query=p

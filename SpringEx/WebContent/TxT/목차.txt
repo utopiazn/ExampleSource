@@ -4,7 +4,7 @@
 
 스프링 기본예제 
 
-1. 패키지 kh01\spring\controller
+0. 패키지 kh01\spring\controller
 
 * 스프링의 기본동작
 
@@ -13,7 +13,7 @@ WebContent\WEB-INF\view\hello.jsp  <--동작 확인
 http://localhost:8080/SpringEx/hello.do
 
 
-2. 패키지 kh02\spring\Example001\...
+1. 패키지 kh02\spring\Example001\...
 
 * 컨트롤러 메서드의 HTTP 전송 방식(method) 한정
 : 하나의 요청 URL에 대해 HTTP GET 요청과 POST 요청을 한 개의 컨트롤러에서 처리해 주어야 할 때가 있다. 예를 들어, 
@@ -30,7 +30,7 @@ http://localhost:8080/SpringEx/article/newArticle.do
 
 
 
-3.패키지 kh02\spring\Example002\...
+2.패키지 kh02\spring\Example002\...
 * 커맨드 객체로 List 받기*
 
 
@@ -40,3 +40,20 @@ WebContent\WEB-INF\view\order\orderCompletion.jsp  <-- 결과
 실제 호출 하는 법.
 http://localhost:8080/SpringEx/order/order.do
 
+
+
+3.패키지 kh02\spring\Example003\...
+  5.4 컨트롤러 메서드의 파라미터 타입 
+
+WebContent\WEB-INF\view\search\external.jsp
+WebContent\WEB-INF\view\search\internal.jsp
+
+
+실제 호출 하는 법.
+	http://localhost:8080/SpringEx/search/internal.do?query=q&p=2
+	http://localhost:8080/SpringEx/search/internal.do?query=q
+	http://localhost:8080/SpringEx/search/internal.do  (query 값이 없어서 오류)
+
+	http://localhost:8080/SpringEx/search/external.do?query=p&p=22
+	http://localhost:8080/SpringEx/search/external.do?query=p
+	http://localhost:8080/SpringEx/search/external.do

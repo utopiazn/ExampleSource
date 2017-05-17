@@ -37,6 +37,8 @@
 
 	<bean class="kh02.spring.Example002.controller.OrderController"/>
 	
+	<bean class="kh02.spring.Example003.controller.SearchController"/>
+	
 
 </beans>
 
