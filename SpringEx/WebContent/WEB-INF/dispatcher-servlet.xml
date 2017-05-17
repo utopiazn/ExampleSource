@@ -50,5 +50,17 @@
 	<bean id="searchService" class="kh02.spring.Example006.service.SearchService" />
 
 
+	<bean class="kh02.spring.Example007.controller.CreateAccountController" />
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			
+			<list>
+				<value>messages.validation</value>	
+			</list>
+		
+		</property>	
+	</bean>
+
 </beans>
 
