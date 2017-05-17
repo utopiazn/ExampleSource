@@ -1,8 +1,29 @@
 
-1. 패키지 kh01\spring\controller
+
+스프링 강의 노트 004.txt 파일 참조.
+
 스프링 기본예제 
+
+1. 패키지 kh01\spring\controller
+
+* 스프링의 기본동작
+
 WebContent\WEB-INF\view\hello.jsp  <--동작 확인
 실제 호출 하는 법.
 http://localhost:8080/SpringEx/hello.do
 
-스프링 강의 노트 004.txt 파일 참조.
+
+2. 패키지 kh02\spring\Example001\...
+
+* 컨트롤러 메서드의 HTTP 전송 방식(method) 한정
+: 하나의 요청 URL에 대해 HTTP GET 요청과 POST 요청을 한 개의 컨트롤러에서 처리해 주어야 할 때가 있다. 예를 들어, 
+        GET 요청이 들어오면 글쓰기 폼을 보여주고 POST 요청이 들어오면 글쓰기 폼 전송을 처리하고 싶을 때가 있다. 이런 경우
+        @RequestMapping Annotation의 method 속성을 이용해서 메서드가 처리할 HTTP 메서드를 제한할 수 있다.
+        아래 Code는 @RequestMapping Annotation의 method 속성의 사용 예를 보여주고 있다.
+
+
+WebContent\WEB-INF\view\article\newArticleForm.jsp  <--시작
+WebContent\WEB-INF\view\article\newArticleSubmitted.jsp  <-- 결과
+
+실제 호출 하는 법.
+http://localhost:8080/SpringEx/article/newArticle.do
