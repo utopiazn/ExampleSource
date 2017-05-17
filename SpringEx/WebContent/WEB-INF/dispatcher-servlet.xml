@@ -41,6 +41,7 @@
 	
 	<bean id="cookieController" class="kh02.spring.Example004.controller.CookieController"/>
 	
+	<bean class="kh02.spring.Example005.controller.HeaderController"/>
 
 </beans>
 

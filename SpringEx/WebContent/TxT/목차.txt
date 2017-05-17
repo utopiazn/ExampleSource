@@ -71,3 +71,15 @@ WebContent\WEB-INF\view\cookie\view.jsp
 	http://localhost:8080/SpringEx/cookie/view.do  <-- 쿠키 확인
 	
 	
+	
+5.패키지 kh02\spring\Example005\... 
+
+(3) @RequestHeader Annotation을 이용한 헤더 Mapping
+
+	WebContent\WEB-INF\view\header\pass.jsp
+	
+	실제 호출 하는 법.	
+	http://localhost:8080/SpringEx/header/check.do  <--쿠키 생성	
+	
+	
+	
