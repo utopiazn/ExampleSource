@@ -27,3 +27,16 @@ WebContent\WEB-INF\view\article\newArticleSubmitted.jsp  <-- 결과
 
 실제 호출 하는 법.
 http://localhost:8080/SpringEx/article/newArticle.do
+
+
+
+3.패키지 kh02\spring\Example002\...
+* 커맨드 객체로 List 받기*
+
+
+WebContent\WEB-INF\view\order\orderForm.jsp <-- 시작
+WebContent\WEB-INF\view\order\orderCompletion.jsp  <-- 결과
+
+실제 호출 하는 법.
+http://localhost:8080/SpringEx/order/order.do
+

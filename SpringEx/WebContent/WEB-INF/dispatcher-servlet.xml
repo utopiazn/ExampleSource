@@ -35,5 +35,8 @@
 	
 	<bean id="articleService" class="kh02.spring.Example001.service.ArticleService"/>
 
+	<bean class="kh02.spring.Example002.controller.OrderController"/>
+	
+
 </beans>
 
