@@ -4,7 +4,7 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>KH02_Example002 주문</title>
 </head>
 <body>

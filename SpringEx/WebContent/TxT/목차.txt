@@ -57,3 +57,17 @@ WebContent\WEB-INF\view\search\internal.jsp
 	http://localhost:8080/SpringEx/search/external.do?query=p&p=22
 	http://localhost:8080/SpringEx/search/external.do?query=p
 	http://localhost:8080/SpringEx/search/external.do
+
+	
+4.패키지 kh02\spring\Example004\... 
+
+  (2) @CookieValue Annotation을 이용한 쿠키 Mapping	
+  
+  
+  WebContent\WEB-INF\view\cookie\make.jsp
+WebContent\WEB-INF\view\cookie\view.jsp	
+실제 호출 하는 법.	
+	http://localhost:8080/SpringEx/cookie/make.do  <--쿠키 생성	
+	http://localhost:8080/SpringEx/cookie/view.do  <-- 쿠키 확인
+	
+	

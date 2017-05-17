@@ -39,6 +39,8 @@
 	
 	<bean class="kh02.spring.Example003.controller.SearchController"/>
 	
+	<bean id="cookieController" class="kh02.spring.Example004.controller.CookieController"/>
+	
 
 </beans>
 
