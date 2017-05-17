@@ -43,5 +43,12 @@
 	
 	<bean class="kh02.spring.Example005.controller.HeaderController"/>
 
+
+	<bean class="kh02.spring.Example006.controller.GameSearchController"
+		p:searchService-ref="searchService" />
+
+	<bean id="searchService" class="kh02.spring.Example006.service.SearchService" />
+
+
 </beans>
 

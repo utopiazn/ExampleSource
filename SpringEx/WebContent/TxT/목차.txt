@@ -78,8 +78,13 @@ WebContent\WEB-INF\view\cookie\view.jsp
 
 	WebContent\WEB-INF\view\header\pass.jsp
 	
-	실제 호출 하는 법.	
+실제 호출 하는 법.	
 	http://localhost:8080/SpringEx/header/check.do  <--쿠키 생성	
 	
+
+6.패키지 kh02\spring\Example006\... 	
+(4) Servlet API 직접 사용	
 	
+실제 호출 하는 법.	
+	http://localhost:8080/SpringEx/search/main.do  <--시작	
 	
