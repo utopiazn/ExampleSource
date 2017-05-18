@@ -146,4 +146,9 @@ WebContent\index.jsp  <-- 호출
   WebContent\WEB-INF\view\log\logList.jsp <-- 실행 
      실제 호출 하는 법.  
   http://localhost:8080/SpringEx/log/query.do?from=2010-04-01&to=2010-04-30 
-	
+  
+  
+ 13.패키지 kh02\spring\Example013\... 
+     11.2 WebBindingInitializer를 이용한 공통 PropertyEditor 등록
+  
+	    실제 호출 하는 법. 
