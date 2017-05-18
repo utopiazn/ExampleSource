@@ -73,6 +73,14 @@
 	<bean class="kh02.spring.Example009.controller.CharacterInfoController"/>
 	
 	
+	<bean id="authenticator" class="kh02.spring.Example010.service.MockAuthenticator"
+		p:commonLogger-ref="commonLogger" />
+
+	<bean class="kh02.spring.Example010.controller.LoginController">
+		<property name="authenticator" ref="authenticator" />
+	</bean>
+	
+	
 	
 </beans>
 

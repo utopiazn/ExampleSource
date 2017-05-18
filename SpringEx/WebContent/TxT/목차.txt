@@ -112,4 +112,14 @@ http://localhost:8080/SpringEx/game/list
 	
 9.패키지 kh02\spring\Example009\... 	
     8.2 @PathVariable Annotation을 이용한 URI 템플릿	
+    
+ WebContent\WEB-INF\view\character\users\info.jsp
+  
+  실제 호출 하는 법.  
+    http://localhost:8080/SpringEx/game/user/madvirus/characters/10 
+    
+    /SpringEx/game/user/  경로  
+    /madvirus    <-- 변수값
+    /10  <-- 변수값
+    
 	

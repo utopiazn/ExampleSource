@@ -43,8 +43,18 @@
 	<!-- 캐릭터 인코딩 처리를 위한 필터 설정 -->
  
  
- 
+ 	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+	        classpath:common.xml
+	    </param-value>
+	</context-param>
   
+  
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
   
   
 </web-app>
