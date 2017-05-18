@@ -84,5 +84,7 @@
 	
 	<bean class="kh02.spring.Example011.controller.ReportSubmissionController"/>
 	
+	<bean class="kh02.spring.Example012.controller.QueryLogController"/>
+	
 </beans>
 

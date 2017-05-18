@@ -138,4 +138,12 @@ WebContent\index.jsp  <-- 호출
  
   실제 호출 하는 법.  
    http://localhost:8080/SpringEx/report/submission.do
+   
+  12.패키지 kh02\spring\Example012\... 	
+  
+   1 @InitBinder Annotation을 이용한 Date 타입 변환 처리 
+   
+  WebContent\WEB-INF\view\log\logList.jsp <-- 실행 
+     실제 호출 하는 법.  
+  http://localhost:8080/SpringEx/log/query.do?from=2010-04-01&to=2010-04-30 
 	
