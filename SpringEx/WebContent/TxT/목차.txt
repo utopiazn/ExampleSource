@@ -110,3 +110,6 @@ http://localhost:8080/SpringEx/game/info
 http://localhost:8080/SpringEx/game/list
 	
 	
+9.패키지 kh02\spring\Example009\... 	
+    8.2 @PathVariable Annotation을 이용한 URI 템플릿	
+	

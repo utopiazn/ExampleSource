@@ -2594,8 +2594,10 @@
 		@RequestMapping("/characters/{characterId}")
 		public String characterInfo(@PathVariable String userId,
 				@PathVariable int characterId, ModelMap model) {
+			
 			model.addAttribute("userId", userId);
 			model.addAttribute("characterId", characterId);
+			
 			return "game/character/info";
 		}
 	}
@@ -2617,6 +2619,9 @@
 	</body>
 	</html>
 
+	http://localhost:8080/SpringEx/game/users/characters/10
+	
+	
 	http://localhost:8080/SpringMVC01/game/users/madvirus/characters/10
 
 ===============================================================================

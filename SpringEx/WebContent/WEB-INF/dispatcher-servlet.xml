@@ -70,6 +70,9 @@
 		<property name="alwaysUseFullPath" value="true" />		
 	</bean>
 	
+	<bean class="kh02.spring.Example009.controller.CharacterInfoController"/>
+	
+	
 	
 </beans>
 
