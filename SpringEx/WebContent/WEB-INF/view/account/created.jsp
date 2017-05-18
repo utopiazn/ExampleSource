@@ -8,7 +8,6 @@
 	<title>KH02_Example007 계정 생성</title>
 </head>
 
-</head>
 
 <body>
 

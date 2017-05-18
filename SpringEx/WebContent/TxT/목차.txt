@@ -100,5 +100,13 @@ WebContent\WEB-INF\view\account\creationForm.jsp
 실제 호출 하는 법.	
 http://localhost:8080/SpringEx/account/create.do
 
+8.패키지 kh02\spring\Example008\...   
+전체 경로와 Servlet 기반 경로 매칭 설정	
+WebContent\WEB-INF\view\game\users\info.jsp
+WebContent\WEB-INF\view\game\list.jsp
+
+실제 호출 하는 법.
+http://localhost:8080/SpringEx/game/info
+http://localhost:8080/SpringEx/game/list
 	
 	
