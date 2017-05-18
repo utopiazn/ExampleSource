@@ -122,4 +122,13 @@ http://localhost:8080/SpringEx/game/list
     /madvirus    <-- 변수값
     /10  <-- 변수값
     
+9.패키지 kh02\spring\Example010\... 	
+	
+로그인 동작 관련및 패키지 리스트 목록
+
+WebContent\index.jsp  <-- 호출
+    
+    실제 호출 하는 법.   
+    http://localhost:8080/SpringEx/long/login.do
+    
 	

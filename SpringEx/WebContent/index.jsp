@@ -57,7 +57,7 @@
 		</li>
 		
 		<li>
-			<a href="<c:url value='/game/users/madvirus/characters/10' />">/game/users/{userId}/characters/{characterId}</a>
+			<a href="<c:url value='/game/user/madvirus/characters/10' />">/game/users/{userId}/characters/{characterId}</a>
 			(CharacterInfoController, @PathVariable 예제)
 		</li>
 		

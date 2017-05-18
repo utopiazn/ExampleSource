@@ -1,7 +1,5 @@
 package kh02.spring.Example010.controller;
 
-import java.sql.Date;
-import java.text.DateFormat;
 
 import javax.validation.Valid;
 
