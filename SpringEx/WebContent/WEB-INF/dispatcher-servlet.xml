@@ -69,7 +69,7 @@
 		<property name="alwaysUseFullPath" value="true" />
 	</bean>
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
-		<property name="alwaysUseFullPath" value="true" />		
+		<property name="alwaysUseFullPath" value="true" ></property>		
 	</bean>
 
 </beans>

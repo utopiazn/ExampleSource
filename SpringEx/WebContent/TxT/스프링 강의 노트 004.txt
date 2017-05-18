@@ -2322,12 +2322,12 @@
 	</html>
 
 	2[/src/messages/validation.properties]
-	required=필수 항목입니다.
-	invalidIdOrPassword.loginCommand=아이디({0})와 암호가 일치하지 않습니다.
-	required.loginCommand.userId=사용자 아이디는 필수 항목입니다.
-	required.password=암호는 필수 항목입니다.
-	typeMismatch.from=시작일 값 형식은 yyyy-MM-dd 여야 합니다.
-	typeMismatch.to=종료일 값 형식은 yyyy-MM-dd 여야 합니다.
+required=필수 항목입니다.
+invalidIdOrPassword.loginCommand=아이디({0})와 암호가 일치하지 않습니다.
+required.loginCommand.userId=사용자 아이디는 필수 항목입니다.
+required.password=암호는 필수 항목입니다.
+typeMismatch.from=시작일 값 형식은 yyyy-MM-dd 여야 합니다.
+typeMismatch.to=종료일 값 형식은 yyyy-MM-dd 여야 합니다.
 
 	3[MemberInfoValidator.java]
 	package madvirus.spring.chap06.validator;
