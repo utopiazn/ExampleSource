@@ -122,4 +122,5 @@ http://localhost:8080/SpringEx/game/list
     /madvirus    <-- 변수값
     /10  <-- 변수값
     
+10.패키지 kh02\spring\Example010\... 	 
 	
