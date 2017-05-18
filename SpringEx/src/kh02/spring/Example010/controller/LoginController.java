@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
-@RequestMapping("/long/login.do")
+@RequestMapping("/login/login.do")
 public class LoginController {
 	
 	private String formViewName="login/form";

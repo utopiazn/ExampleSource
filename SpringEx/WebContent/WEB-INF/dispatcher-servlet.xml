@@ -80,7 +80,9 @@
 		<property name="authenticator" ref="authenticator" />
 	</bean>
 	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 	
+	<bean class="kh02.spring.Example011.controller.ReportSubmissionController"/>
 	
 </beans>
 
