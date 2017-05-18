@@ -122,5 +122,35 @@ http://localhost:8080/SpringEx/game/list
     /madvirus    <-- 변수값
     /10  <-- 변수값
     
-10.패키지 kh02\spring\Example010\... 	 
+
+10.패키지 kh02\spring\Example010\... 	
 	
+로그인 동작 관련및 패키지 리스트 목록
+
+WebContent\index.jsp  <-- 호출
+    
+    실제 호출 하는 법.   
+    http://localhost:8080/SpringEx/login/login.do
+ 
+ 11.패키지 kh02\spring\Example011\...
+ 파일 없로드 	
+ WebContent\WEB-INF\view\report\submissionForm.jsp  <-- 실행
+ WebContent\WEB-INF\view\report\submissionComplete.jsp <-- 결과
+ 
+  실제 호출 하는 법.  
+   http://localhost:8080/SpringEx/report/submission.do
+   
+  12.패키지 kh02\spring\Example012\... 	
+  
+   1 @InitBinder Annotation을 이용한 Date 타입 변환 처리 
+   
+  WebContent\WEB-INF\view\log\logList.jsp <-- 실행 
+     실제 호출 하는 법.  
+  http://localhost:8080/SpringEx/log/query.do?from=2010-04-01&to=2010-04-30 
+  
+  
+ 13.패키지 kh02\spring\Example013\... 
+     11.2 WebBindingInitializer를 이용한 공통 PropertyEditor 등록
+  
+	    실제 호출 하는 법. 
+

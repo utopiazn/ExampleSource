@@ -57,7 +57,7 @@
 		</li>
 		
 		<li>
-			<a href="<c:url value='/game/users/madvirus/characters/10' />">/game/users/{userId}/characters/{characterId}</a>
+			<a href="<c:url value='/game/user/madvirus/characters/10' />">/game/users/{userId}/characters/{characterId}</a>
 			(CharacterInfoController, @PathVariable 예제)
 		</li>
 		
@@ -72,7 +72,7 @@
 		</li>
 		
 		<li>
-			<a href="<c:url value='/log/query.do' />?from=2010-04-01&to=2010-04-30">/log/query.do</a>
+			<a href="<c:url value='/log/query.do' />?from=2017-05-01&to=2017-05-30">/log/query.do</a>
 			(QueryLogController, @InitBinder 및 WebBindingInitializer 예제)
 		</li>
 		

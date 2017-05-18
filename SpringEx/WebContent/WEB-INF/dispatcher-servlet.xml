@@ -80,6 +80,30 @@
 		<property name="authenticator" ref="authenticator" />
 	</bean>
 	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	
+	<bean class="kh02.spring.Example011.controller.ReportSubmissionController"/>
+	
+	<bean class="kh02.spring.Example012.controller.QueryLogController"/>
+	
+	
+	<bean class="kh02.spring.Example013.controller.EventController" />
+	
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		
+		<property name="alwaysUseFullPath" value="true" />
+		<property name="interceptors">
+		
+			<list>
+				<ref bean="eventExpirationCheckInterceptor" />
+			</list>
+		
+		</property>
+		
+	</bean>
+	
+	<bean id="eventExpirationCheckInterceptor" class="kh02.spring.Example013.interceptor.EventExpirationCheckInterceptor" />
 	
 	
 </beans>
