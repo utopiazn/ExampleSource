@@ -8,7 +8,9 @@
 
 * 스프링의 기본동작
 
-WebContent\WEB-INF\view\hello.jsp  <--동작 확인
+WebContent\WEB-INF\viewjsp\loginForm.jsp  <--동작 확인
+WebContent\WEB-INF\viewjsp\loginSuccess.jsp  <-- 결과
+
 실제 호출 하는 법.
-http://localhost:8080/SpringEx/hello.do
+http://localhost:8080/SpringEx05/login/login.do
 

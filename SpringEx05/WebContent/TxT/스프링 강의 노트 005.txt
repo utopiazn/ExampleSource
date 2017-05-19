@@ -1144,7 +1144,8 @@
 		}
 
 	}	
-
+	
+	
 	6[/src/messages/validation_en.properties]
 	required=required
 	required.login.id=login id is required
@@ -1273,6 +1274,8 @@
 		
 	</beans>
 
+
+	//회원가입
 	<Example002> /jsp/member/regist.do
 	[RegistMemberController.java]
 	package madvirus.spring.chap07.controller;
@@ -1600,6 +1603,7 @@
 	...
 	<bean class="madvirus.spring.chap07.controller.RegistMemberController" />
 	...
+		  
 		  
 	<Example003> /jsp/articleForm.do
 	[ArticleController.java]
