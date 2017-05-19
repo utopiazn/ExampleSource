@@ -4,7 +4,7 @@
 
 스프링 기본예제 
 
-0. 패키지 kh01\spring\controller
+1. 패키지 kh05/spring/Example001/controller/...
 
 * 스프링의 기본동작
 
@@ -14,3 +14,13 @@ WebContent\WEB-INF\viewjsp\loginSuccess.jsp  <-- 결과
 실제 호출 하는 법.
 http://localhost:8080/SpringEx05/login/login.do
 
+
+ 2.패키지 kh05/spring/Example002/controller/...
+ 
+ 
+ WebContent\WEB-INF\viewjsp\registMemberForm.jsp  <-- 동작확인
+ WebContent\WEB-INF\viewjsp\registMember.jsp      <--- 결과
+ 
+ 
+실제 호출 하는 법.
+http://localhost:8080/SpringEx05/member/regist.do

@@ -31,12 +31,15 @@
     			
     			<value>messages.validation</value>
     			<value>messages.label</value>
+    		
     		</list>
     	
     	</property>
     
     </bean> 
        
+       
+     <bean class="kh05.spring.Example002.controller.RegistMemberController" /> 
        
        
 </beans> 
