@@ -152,6 +152,9 @@ WebContent\index.jsp  <-- 호출
  13.패키지 kh02\spring\Example013\... 
      11.2 WebBindingInitializer를 이용한 공통 PropertyEditor 등록
   
+ WebContent\WEB-INF\view\event\list.jsp  <-- 이벤트 있을시 
+ WebContent\WEB-INF\view\event\eventExpired.jsp  <-- 이벤트 종류시
+  
    실제 호출 하는 법. 
 http://localhost:8080/SpringEx/event/list.do  <--- dispatcher-servlet.xml 설정위치를 맨위로
 
