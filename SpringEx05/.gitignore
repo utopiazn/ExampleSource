@@ -1,1 +1,5 @@
-/build/
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+Servers/
+SpringEx05/build/
