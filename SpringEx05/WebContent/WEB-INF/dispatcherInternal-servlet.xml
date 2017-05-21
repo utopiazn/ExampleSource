@@ -40,6 +40,8 @@
        
        
      <bean class="kh05.spring.Example002.controller.RegistMemberController" /> 
+     
+     <bean class="kh05.spring.Example003.controller.ArticleController" /> 
        
-       
+   
 </beans> 
