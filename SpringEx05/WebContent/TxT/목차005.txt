@@ -28,3 +28,7 @@ http://localhost:8080/SpringEx05/member/regist.do
 
 2.패키지 kh03/spring/Example002/controller/...
  
+ 
+ 
+실제 호출 하는 법.
+ http://localhost:8080/SpringEx05/articleForm.do

@@ -14,7 +14,7 @@ public class ArticleController {
 	@RequestMapping(value="/article/{id}",method=RequestMethod.GET)
 	public String read(
 				@PathVariable("id") Integer id, Model model){	
-		
+		System.out.println("읽기");
 		model.addAttribute("article",new Article(id));		
 		
 		return "article/read";
@@ -54,6 +54,8 @@ public class ArticleController {
 	//폼
 	@RequestMapping("/articleForm.do")
 	public String testForm(Model model) {
+		
+		System.out.println("폼");
 		model.addAttribute("article", new Article(1));
 		return "article/testForm";
 	}

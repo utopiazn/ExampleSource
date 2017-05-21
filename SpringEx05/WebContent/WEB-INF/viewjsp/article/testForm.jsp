@@ -21,11 +21,11 @@
 	</form:form>
 	
 	<form:form action="/article/${article.id}" commandName="article" method="put">
-	<input type="submit" value="수정">
+		<input type="submit" value="수정">
 	</form:form>
 
-	<form:form action="/viewjsp/article" commandName="article" method="post">
-	<input type="submit" value="생성">
+	<form:form action="/SpringEx05/article" commandName="article" method="post">
+		<input type="submit" value="생성">
 	</form:form>
 
 </body>

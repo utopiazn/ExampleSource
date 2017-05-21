@@ -16,7 +16,14 @@
 		</property>
 	</bean>
 
-	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+
+   <!--      	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+        			   p:prefix="/WEB-INF/viewjsp/"
+        			   p:suffix=".jsp"
+        			   p:order="1"/>
+ -->
+ 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		
 		<property name="prefix" value="/WEB-INF/viewjsp/"/>
 		<property name="suffix" value=".jsp"/>
