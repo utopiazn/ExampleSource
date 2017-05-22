@@ -9,6 +9,10 @@
 	       http://www.springframework.org/schema/context
 	       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
+
+	
+
+	
 	<bean class="kh05.spring.Example001.controller.LoginController">
 		
 		<property name="authenticator">
@@ -51,9 +55,12 @@
 			<list>
 				<value>/WEB-INF/tiles2def/tilesdef.xml</value>
 			</list>
-	
+		
 		</property>
-	
+		
+		<property name="preparerFactoryClass"
+			value="org.springframework.web.servlet.view.tiles2.SpringBeanPreparerFactory" />
+			
 	</bean>
 
 	<bean id="viewResolver"	class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -62,6 +69,10 @@
 	
 	</bean>
 	
+	
+	<bean id="menuPreparer" class="kh05.spring.Example006.controller.MenuPreparer" />
+	
+	<bean class="kh05.spring.Example002.controller.RegistMemberController" /> 
 	
 	
 

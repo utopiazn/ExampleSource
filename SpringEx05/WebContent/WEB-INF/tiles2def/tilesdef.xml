@@ -9,7 +9,7 @@
 	
 		<definition name="base_layout" 
 			template="/WEB-INF/viewtiles2/template/layout.jsp"
-			preparer="meunPreparer"	>
+			preparer="menuPreparer"	>
 		
 			<put-attribute name="header"
 				value="/WEB-INF/viewtiles2/template/header.jsp">			
@@ -38,6 +38,28 @@
 				value="/WEB-INF/viewtiles2/loginSuccess.jsp">			
 			</put-attribute>						
 		</definition>	
+		
+		
+		<definition name="registMemberForm" extends ="base_layout">
+		
+			<put-attribute name="title" value="회원가입"/>
+			
+			<put-attribute name="body"
+				value="/WEB-INF/viewtiles2/registMemberForm.jsp">			
+			</put-attribute>						
+		</definition>	
+		
+		<definition name="registMember" extends ="base_layout">
+		
+			<put-attribute name="title" value="회원가입 완료"/>
+			
+			<put-attribute name="body"
+				value="/WEB-INF/viewtiles2/registMember.jsp">			
+			</put-attribute>						
+		</definition>	
+		
+		
+		
 	
 	
 	</tiles-definitions> 
