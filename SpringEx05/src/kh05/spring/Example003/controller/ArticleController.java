@@ -24,10 +24,10 @@ public class ArticleController {
 	@RequestMapping(value="/article/{id}",method=RequestMethod.DELETE)
 	public String delete(
 				@PathVariable("id") Integer id, Model model){
-		
+		System.out.println("삭제");
 		model.addAttribute("article", new Article(id));
 		
-		return "article/delet";
+		return "article/delete";
 	}
 	
 	

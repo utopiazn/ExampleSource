@@ -12,7 +12,9 @@ WebContent\WEB-INF\viewjsp\loginForm.jsp  <--동작 확인
 WebContent\WEB-INF\viewjsp\loginSuccess.jsp  <-- 결과
 
 실제 호출 하는 법.
-http://localhost:8080/SpringEx05/login/login.do
+http://localhost:8080/SpringEx05/jsp/login/login.do
+
+/jsp/login/login.do
 
 
  2.패키지 kh05/spring/Example002/controller/...

@@ -2100,6 +2100,7 @@
 		<label for="loginType"><spring:message code="login.form.type" /></label>
 		<form:select path="loginType" items="${loginTypes}" />
 	</p>
+	
 	<p>
 		<label for="id"><spring:message code="login.form.id" /></label>
 		<form:input id="id" path="id"/>

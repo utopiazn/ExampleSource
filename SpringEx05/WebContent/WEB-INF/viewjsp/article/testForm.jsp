@@ -8,7 +8,7 @@
 
 <%
 	String servletPath = request.getRequestURI();
-%>
+%> 
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTR-8">
@@ -16,15 +16,20 @@
 </head>
 <body>
 
-	<form:form action="/article/${article.id}" commandName="article" method="delete">
+	<form:form action="/SpringEx05/jsp/article/${article.id}" commandName="article" method="delete">
 		<input type="submit" value="삭제">
 	</form:form>
 	
-	<form:form action="/article/${article.id}" commandName="article" method="put">
+	<form:form action="/SpringEx05/jsp/article/${article.id}" commandName="article" method="put">
 		<input type="submit" value="수정">
 	</form:form>
+	
+	<form:form action="/SpringEx05/jsp/article/${article.id}" commandName="article" method="GET">
+		<input type="submit" value="읽기">
+	</form:form>
+	
 
-	<form:form action="/SpringEx05/article" commandName="article" method="post">
+	<form:form action="/SpringEx05/jsp/article" commandName="article" method="post">
 		<input type="submit" value="생성">
 	</form:form>
 
