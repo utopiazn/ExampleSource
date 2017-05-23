@@ -1,0 +1,3 @@
+
+http://localhost:8080/SpringShop02/index.html  <-- 목록
+http://localhost:8080/SpringShop02/detail.html?itemId=1  <--상세보기
