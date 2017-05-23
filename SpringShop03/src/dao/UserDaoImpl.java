@@ -25,7 +25,8 @@ public class UserDaoImpl implements UserDao{
 	@Override
 	public User findByUserIdAndPassword(String userId, String password) {
 		// TODO Auto-generated method stub
-		return null;
+		RowMapper<User> mapper = new BeanPropertyRowMapper<User>(User.class);
+		return this.template.queryForObject(SELECT_BY_USERID_PASSWORD, mapper, userId, password);
 	}
 
 }

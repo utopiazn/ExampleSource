@@ -5,8 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-
-<!-- Data Source -->
+	<!-- Data Source -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<!-- JDBC 드라이버 클래스명 설정-->
@@ -27,21 +26,39 @@
 		</property>
 	</bean>
 	
-	<!-- itemDao -->
-	<bean id="itemDao" class="dao.ItemDaoImpl" p:dataSource-ref="dataSource"/>
-	
-	<!-- ItemCatalog -->
-	<bean id="itemCatalog" class="logic.ItemCatalogImpl" p:itemDao-ref="itemDao"/>
-	
-	
-	<!--Shop  -->
-	<bean id="shopService" class="logic.ShopImpl" p:itemCatalog-ref="itemCatalog" />
-	
-	
+	<!-- Shop -->
+	<bean id="shopService" class="logic.ShopImpl">
+		<property name="userCatalog">
+			<ref bean="userCatalog" />
+		</property>
+	</bean>
+
+	<!-- UserCatalog -->
+	<bean id="userCatalog" class="logic.UserCatalogImpl">
+		<property name="userDao">
+			<ref bean="userDao" />
+		</property>
+	</bean>
+
+	<!-- UserDao -->
+	<bean id="userDao" class="dao.UserDaoImpl">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+
 	<!-- Validator -->
 	<bean id="loginValidator" class="utils.LoginValidator" />
+
+	<!-- MessageSource -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>messages</value>
+			</list>
+		</property>
+	</bean>
 	
-	<!-- messageSource -->
-	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"/>
 	
 </beans>
