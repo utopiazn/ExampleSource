@@ -11,7 +11,7 @@
    손쉽게 사용할 수 있다는 장점을 갖는다. 또한, Struts와 같은 Framework와 SPRING Framework를 연동하기 위해
    추가적인 설정을 하지 않아도 된다는 장점을 갖고 있다. 이런 이유로 필자는 다른 WEB Framework보다 SPRING MVC를
    선호하고 있다.
-   
+   ㄹ
    본 장에서는 SPRING MVC가 어떻게 동작하는 지를 살펴보고, SPRING MVC의 핵심 구성 요소인 컨트롤러의 구현 방법에
    대해서 살펴볼 것이다. 
 
