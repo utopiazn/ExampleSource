@@ -68,11 +68,11 @@ public class LoginFormController {
 			
 			if(session.getAttribute(WebConstants.CART_KEY)==null){
 				
-				session.setAttribute(WebConstants.CART_KEY,this.shopService.GetCart());
+				session.setAttribute(WebConstants.CART_KEY,this.shopService.getCart());
 			}
 			
 			//유저 확인시
-			modelAndView.setViewName("loginForm/loginSuccess");
+			modelAndView.setViewName("loginform/loginSuccess");
 			modelAndView.addObject("loginUser",loginUser);
 		
 			return modelAndView;

@@ -13,7 +13,7 @@ import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class ItemDaoImpl {
+public class ItemDaoImpl implements ItemDao {
 	
 	private SimpleJdbcTemplate template;
 	

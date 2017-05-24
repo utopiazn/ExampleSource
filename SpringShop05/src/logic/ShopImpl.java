@@ -20,8 +20,7 @@ public class ShopImpl implements Shop {
 	@Autowired
 	private SaleCatalog saleCatalog;
 	
-
-
+	
 	public Integer calculateTotalAmount(List<ItemSet> itemList){
 		
 		// 합계금액
@@ -37,7 +36,7 @@ public class ShopImpl implements Shop {
 
 	
 	@Override
-	public Cart GetCart() {
+	public Cart getCart() {
 		// TODO Auto-generated method stub
 		return new Cart();
 	}

@@ -7,16 +7,16 @@
 		
 		<tr>	
 			<td width="160">
-				<a href="">■목록으로 돌아가기</a>
+				<a href="../index/index.html">■목록으로 돌아가기</a>
 			</td>
 			<td width="160">
-				<a href="">■계산하러 가기</a>
+				<a href="../checkout/checkout.html">■계산하러 가기</a>
 			</td>
 			<td width="160">
-				<a href="">■카트 확인하기</a>
+				<a href="../cart/cartConfirm.html">■카트 확인하기</a>
 			</td>
 			<td width="160">
-				<a href="">■카트 비우기</a>
+				<a href="../cart/cartClear.html">■카트 비우기</a>
 			</td>
 			
 			<td width="160">
@@ -34,7 +34,7 @@
 					
 					<c:when test="${empty loginUser}">
 						<font color="red" >
-							<a href="../loginfrom/login.html">■로그인하기</a>
+							<a href="../loginform/login.html">■로그인하기</a>
 						</font>
 						
 					</c:when>					

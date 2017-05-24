@@ -10,7 +10,7 @@
 	<title>로그인화면</title>
 </head>
 <body>
- 	<%-- <%@ include file="/WEB-INF/jsp/cart_header.jsp"%> --%>
+ 	<%@ include file="/WEB-INF/jsp/cart_header.jsp"%> 
 	
 	<div align="center" class="body">
 		

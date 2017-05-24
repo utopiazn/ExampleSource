@@ -4,7 +4,11 @@ import java.util.List;
 
 public interface Shop {
 	
-	Cart GetCart();
+	
+	Cart getCart();
+	
+	Integer calculateTotalAmount(List<ItemSet> itemList);
+	
 	void checkout(User user,Cart cart);
 	
 	List<Item> getItemList();
