@@ -36,9 +36,11 @@ public class LoginController {
 		
 		ModelAndView mav = new ModelAndView();
 		
-		//from validation
+		//오류검사
 		new LoginValidator().validate(loginModel, result);
+		
 		if(result.hasErrors()){
+			
 			mav.setViewName("/board/login");
 			return mav;
 		}
@@ -46,11 +48,15 @@ public class LoginController {
 		String userId = loginModel.getUserId();
 		String userPw = loginModel.getUserPw();
 		
-
+		System.out.println("userId:"+userId +"\n userPw:"+userPw);
+													  
 		context = new ClassPathXmlApplicationContext("/config/applicationContext.xml");
-		LoginService loginService = (LoginService) context.getBean("loginService");
-		LoginSessionModel loginCheckResult = loginService.checkUserId(userId);
+		System.out.println("1");
 		
+		LoginService loginService = (LoginService) context.getBean("loginService");
+		System.out.println("2");
+		LoginSessionModel loginCheckResult = loginService.checkUserId(userId);
+		System.out.println("3");
 		//check joined user
 		if(loginCheckResult == null){
 			

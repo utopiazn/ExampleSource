@@ -20,7 +20,7 @@
     
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
     	
-    	<property name="driverClassName" value="${jdbc.driver"/>
+    	<property name="driverClassName" value="${jdbc.driver}"/>
     	<property name="url" value="${jdbc.url}"/>
     	<property name="username" value="${jdbc.username}"/>
     	<property name="password" value="${jdbc.password}"/>
@@ -45,7 +45,7 @@
     
     <!-- service class -->
     
-    <bean id="loginService" class="smboard.login.service.LoginServoce">
+    <bean id="loginService" class="smboard.login.service.LoginService">
     	<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"/>
     </bean>
     

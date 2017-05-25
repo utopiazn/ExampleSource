@@ -5,7 +5,7 @@
     "http://ibatis.apache.org/dtd/sql-map-2.dtd">
     
 <sqlMap namespace="login">
-	<typeAlias alias="LoginMpdel" type="smbpard.login.model.LoginSessionModel" />
+	<typeAlias alias="LoginModel" type="smboard.login.model.LoginSessionModel" />
 	
 	<select id="loginCheck" parameterClass="String" resultClass="LoginModel">
 	
