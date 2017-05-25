@@ -416,6 +416,8 @@ jdbc.password = oracle
 7. /src/config/validation.properties
 required=필수 항목입니다.
 
+
+
 8. SessionInterceptor
 package net.nice19.smboard.interceptor;
 
@@ -435,7 +437,8 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
 		//
 		
 		// pass through when access login.do, join.do
-		if(request.getRequestURI().equals("/SummerBoard/login.do") || request.getRequestURI().equals("/SummerBoard/member/join.do")){
+		if(request.getRequestURI().equals("/SummerBoard/login.do") || 
+		request.getRequestURI().equals("/SummerBoard/member/join.do")){
 			if(userId != null){
 				response.sendRedirect(request.getContextPath() + "/board/list.do");
 				return true;
@@ -587,7 +590,9 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/login.do", method = RequestMethod.POST)
-	public ModelAndView loginProc(@ModelAttribute("LoginModel") LoginSessionModel loginModel, BindingResult result, HttpSession session) {
+	public ModelAndView loginProc(
+	@ModelAttribute("LoginModel") LoginSessionModel loginModel,
+	 BindingResult result, HttpSession session) {
 		ModelAndView mav = new ModelAndView();
 		
 		// form validation
