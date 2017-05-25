@@ -28,6 +28,7 @@ public class LoginController {
 		return "/board/login";
 	}
 	
+
 	@RequestMapping(value="/login.do", method = RequestMethod.POST)
 	public ModelAndView loginProc(
 				@ModelAttribute("LoginModel") LoginSessionModel loginModel, 

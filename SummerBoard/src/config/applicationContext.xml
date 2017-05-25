@@ -49,13 +49,13 @@
     	<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"/>
     </bean>
     
-    
-   <!--  <bean id="memberService" class="smboard.member.service.MemberServoce">
+    		                       
+    <bean id="memberService" class="smboard.member.service.MemberService">
     	<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"/>
     </bean>
-    
-    <bean id="boardService" class="smboard.board.service.BoardServoce">
+  <!--   
+    <bean id="boardService" class="smboard.board.service.BoardService">
     	<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"/>
-    </bean> -->
-       
+    </bean> 
+        -->
  </beans>      

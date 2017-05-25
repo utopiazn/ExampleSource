@@ -9,9 +9,11 @@
        
     <!-- controllers -->
 	<bean id="loginController" 	class="smboard.login.controller.LoginController"/>
-<!-- 	<bean id="memberController" class="smboard.member.controller.MemberController"/>    
-	<bean id="boardController"  class="smboard.board.controller.BoardController"/>  --> 
-      
+	<bean id="memberController" class="smboard.member.controller.MemberController"/>    
+	<!-- <bean id="boardController"  class="smboard.board.controller.BoardController"/> 
+       -->
+       
+       
     <!-- viewResolver -->        
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
     	<property name="viewClass" 	value="org.springframework.web.servlet.view.JstlView"/>
