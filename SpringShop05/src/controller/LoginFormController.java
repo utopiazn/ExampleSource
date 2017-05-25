@@ -64,7 +64,7 @@ public class LoginFormController {
 			//유저 정보 검색							
 			User loginUser = this.shopService.getUserByUserIdAndPassword(user.getUserId(), user.getPassword());
 			
-			session.setAttribute(WebConstants.CART_KEY,loginUser);
+			session.setAttribute(WebConstants.USER_KEY,loginUser);
 			
 			if(session.getAttribute(WebConstants.CART_KEY)==null){
 				
