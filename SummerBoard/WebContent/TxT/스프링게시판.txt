@@ -279,7 +279,8 @@ jdbc.password = oracle
 	</insert>
 	<insert id="writeComment" parameterClass="BoardCommentModel">
 		insert into jmboard_comment(idx, writer, content, writeDate, linkedArticleNum, writerId)
-			values(BOARDCOMMENTSEQ.nextVal, #writer#, #content#, sysdate, #linkedArticleNum#, #writerId#)
+		
+		values(BOARDCOMMENTSEQ.nextVal, #writer#, #content#, sysdate, #linkedArticleNum#, #writerId#)
 	</insert>
 	
 	<update id="updateHitcount" parameterClass="java.util.HashMap">

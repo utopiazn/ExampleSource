@@ -96,7 +96,7 @@
 		from 
 			jmboard_jjs
 		where
-			$type$ like '%$keyword%'
+			$type$ like '%$keyword$%'
 	</select>
 
 	<select id="searchArticle" parameterClass="java.util.HashMap" resultClass="BoardModel">

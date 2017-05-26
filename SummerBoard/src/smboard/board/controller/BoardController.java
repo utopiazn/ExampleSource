@@ -74,14 +74,14 @@ public class BoardController {
 			currentPage = Integer.parseInt(request.getParameter("page"));
 		}
 		
-		if(request.getParameter("tupe") != null){
+		if(request.getParameter("type") != null){
 			
 			type = request.getParameter("type").trim();
 		}
 		
 		if(request.getParameter("keyword") != null){
 			
-			type = request.getParameter("keyword").trim();
+			keyword = request.getParameter("keyword").trim();
 		}
 		
 
@@ -101,8 +101,8 @@ public class BoardController {
 			totalNum = boardService.getSearchTotalNum(type, keyword);
 		}else{
 			
-			System.out.println("startArticleNum:"+startArticleNum  );
-			System.out.println("endArticleNum:"+endArticleNum  );
+			System.out.println("startArticleNum222:"+startArticleNum  );
+			System.out.println("endArticleNum222:"+endArticleNum  );
 			
 			boardList = boardService.getBoardList(startArticleNum, endArticleNum);
 			
