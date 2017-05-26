@@ -281,12 +281,17 @@ public class BoardController {
 		return "redirect:list.do";
 	}
 	
-	@RequestMapping("/commentwrite.do")
+	@RequestMapping("/commentWrite.do")
 	public ModelAndView commentWriteProc(
 				@ModelAttribute("commentModel") BoardCommentModel commentModel){
 		
 		//new list code change to <br/> tag
-		String content = commentModel.getContent().replaceAll("/r/n", "<br/>");
+		
+		
+		String content = commentModel.getContent().replaceAll("\r\n", "<br/>");
+		
+		System.out.println(content);
+		
 		commentModel.setContent(content);
 		
 		boardService.writeComment(commentModel);
@@ -308,8 +313,15 @@ public class BoardController {
 		
 		BoardModel board = boardService.getOneArticle(idx);
 		
+		System.out.println(board);
+		
+		System.out.println("getContent():"+board.getContent());
+		
+		
 		//<br/> tag change to new line code
-		String content = board.getContent().replaceAll("<br/>", "/r/n");
+		String content = board.getContent().replaceAll("<br/>", "\r\n");
+		
+		System.out.println("ddd "+content);
 		board.setContent(content);
 		
 		ModelAndView mav = new ModelAndView();
@@ -322,7 +334,7 @@ public class BoardController {
 		}else{
 			
 			mav.addObject("board",board);
-			mav.setViewName(".board/modify");
+			mav.setViewName("board/modify");
 		}
 		
 		return mav;

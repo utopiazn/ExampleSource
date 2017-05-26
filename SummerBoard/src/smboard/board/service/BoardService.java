@@ -112,7 +112,7 @@ public class BoardService implements BoardDao{
 	public boolean writeComment(BoardCommentModel comment) {
 		// TODO Auto-generated method stub
 		
-		sqlMapClientTemplate.insert("bpard.writeComment",comment);
+		sqlMapClientTemplate.insert("board.writeComment",comment);
 		
 		return true;
 	}

@@ -164,7 +164,7 @@
 	    	b.idx desc		
 	</select>
 	
-	<select id="getOneArticel" parameterClass="int" resultClass="BoardModel">
+	<select id="getOneArticle" parameterClass="int" resultClass="BoardModel">
 
 		select 
 			idx,
@@ -172,6 +172,7 @@
 			subject,
 			hitcount,
 			recommendcount,
+			Content,
 			writedate,
 			writerId,
 			fileName

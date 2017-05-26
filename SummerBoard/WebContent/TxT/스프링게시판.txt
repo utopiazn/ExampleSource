@@ -179,7 +179,9 @@ jdbc.password = oracle
 <sqlMap namespace="board">
 	<typeAlias alias="BoardModel" type="net.nice19.smboard.board.model.BoardModel"/>
 	<typeAlias alias="BoardCommentModel" type="net.nice19.smboard.board.model.BoardCommentModel"/>	
-	<select id="getBoardList" parameterClass="java.util.HashMap" resultClass="BoardModel">
+	
+	<select id="getBoardList" parameterClass="java.util.HashMap" 
+	resultClass="BoardModel">
 		select 
 			b.idx, b.writer, b.subject,
 			b.content, b.hitcount, b.recommendcount,
@@ -1695,7 +1697,9 @@ public class BoardController {
 	}
 	
 	@RequestMapping("/modify.do")
-	public ModelAndView boardModify(HttpServletRequest request, HttpSession session){
+	public ModelAndView boardModify(
+	HttpServletRequest request, 
+	HttpSession session){
 		String userId = (String) session.getAttribute("userId");
 		int idx = Integer.parseInt(request.getParameter("idx"));
 		

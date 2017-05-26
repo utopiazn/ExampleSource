@@ -36,7 +36,7 @@
 	
 	function commentDelete(commentIdx,linkedArticleNum){
 		if(confirm("선택하신 댓글을 삭제하시겠습니까?")){
-			location.href("commentDelete.do?idx=" + commentIdx + "&linkedArticleNum=" + linkedArticleNum);
+			location.href="commentDelete.do?idx=" + commentIdx + "&linkedArticleNum=" + linkedArticleNum;
 		}
 	}
 	
@@ -107,7 +107,7 @@
 				<tr>
 					<td colspan="4" align="left">
 						<span class="date">첨부파일:&nbsp;
-							<a href="<%=request.getContextPath()%>/files/${board.fileName}" target="_blank">${board.fileName}</a>
+							<a href="<%=request.getContextPath()%>/img/${board.fileName}" target="_blank">${board.fileName}</a>
 						</span>
 					</td>
 						
