@@ -8,7 +8,6 @@
 
 <!DOCTYPE html>
 
-
 <html>
 <head>
 
@@ -116,7 +115,6 @@
 					<br/><br/>
 				
 					<a href="<%=request.getContextPath()%>/login.do">로그인 페이지로 돌아가기</a>
-				</center>
 							
 			</fieldset>
 		</form>
@@ -124,4 +122,4 @@
 	
 </body>
 
-</html>
+</html> 

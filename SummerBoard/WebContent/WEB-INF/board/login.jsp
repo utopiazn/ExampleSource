@@ -45,9 +45,11 @@
 	</script>
 
 </head>
-<body onload="checkErrCode()">
+<body onload="checkErrCode()"> 
 
-	<div class="wrapper">
+	
+
+ 	<div class="wrapper">
 		
 		<h3>스프링 게시판</h3>
 		
@@ -83,13 +85,13 @@
 					<input type="submit" value="로그인" class="submitBt"/>
 					<br/><br/>
 					<a href="<%=request.getContextPath()%>/member/join.do">회원가입</a>		
-				</center>
+			
 						
 			</fieldset>			
 		</form>
 		
 	</div>
-	
+	 
 	
 </body>
 

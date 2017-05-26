@@ -17,7 +17,8 @@ public class SessionInterceptor extends HandlerInterceptorAdapter {
 		Object userId = request.getSession().getAttribute("userId");
 		
 		//pass through when access login.do , join.do
-		if(request.getRequestURI().equals("/SummerBoard/login.do") || request.getRequestURI().equals("/SummerBoard/member/join.do/")){
+		if(request.getRequestURI().equals("/SummerBoard/login.do") || 
+				request.getRequestURI().equals("/SummerBoard/member/join.do")){
 			
 		
 				if(userId != null){
