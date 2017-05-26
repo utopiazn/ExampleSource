@@ -1522,7 +1522,8 @@ public class BoardController {
 		String keyword = null;		
 		
 		// set variables from request parameter
-		if(request.getParameter("page") == null || request.getParameter("page").trim().isEmpty() || request.getParameter("page").equals("0")) {
+		if(request.getParameter("page") == null || request.getParameter("page").trim().isEmpty() || 
+		request.getParameter("page").equals("0")) {
 			currentPage = 1;
 		} else {
 			currentPage = Integer.parseInt(request.getParameter("page"));
@@ -1651,7 +1652,8 @@ public class BoardController {
 	}
 	
 	@RequestMapping(value="/write.do", method=RequestMethod.POST)
-	public String boardWriteProc(@ModelAttribute("BoardModel") BoardModel boardModel, MultipartHttpServletRequest request){
+	public String boardWriteProc(@ModelAttribute("BoardModel") BoardModel boardModel,
+	 MultipartHttpServletRequest request){
 		// get upload file
 		MultipartFile file = request.getFile("file");
 		String fileName = file.getOriginalFilename();
@@ -1718,7 +1720,12 @@ public class BoardController {
 	}
 	
 	@RequestMapping(value = "/modify.do", method=RequestMethod.POST)
-	public ModelAndView boardModifyProc(@ModelAttribute("BoardModel") BoardModel boardModel, MultipartHttpServletRequest request){
+	public ModelAndView boardModifyProc(
+	
+	@ModelAttribute("BoardModel") BoardModel boardModel, 
+	MultipartHttpServletRequest request){
+	
+	
 		String orgFileName = request.getParameter("orgFile");
 		MultipartFile newFile = request.getFile("newFile");
 		String newFileName = newFile.getOriginalFilename();
@@ -1745,7 +1752,7 @@ public class BoardController {
 		}
 		//
 		// new line code change to <br /> tag
-		String content =  boardModel.getContent().replaceAll("\r\n", "<br />");		
+		String content =  boardModel.getContent().replaceAll("\r\n", "<br/>");		
 		boardModel.setContent(content);
 		//
 		
@@ -1990,6 +1997,8 @@ public class BoardController {
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>글 보기: ${board.subject}</title>
 <link href="<%=request.getContextPath()%>/css/board.css" rel="stylesheet" type="text/css" />
+
+
 <script type="text/javascript">
 	function errCodeCheck(){
 		var errCode = <%=request.getParameter("errCode")%>;

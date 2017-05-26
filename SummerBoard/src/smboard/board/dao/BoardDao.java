@@ -10,6 +10,14 @@ public interface BoardDao {
 	
 	// get all contents in JMBoard table	
 	List<BoardModel> getBoardList(int startArticleNum,int showArticleLimit);
+	
+
+	// show detail about selected article //글번호
+	BoardModel getOneArticle(int idx);
+	
+	// get search result list
+	List<BoardModel> searchArticle(String type, String keyword, int startArticleNum, int endArticleNum); 
+		
 
 	// get all comments
 	List<BoardCommentModel> getCommentList(int idx);

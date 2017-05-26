@@ -58,7 +58,7 @@
 		
 			) b	 left outer join jmboard_comment_jjs c on b.idx= c.linkedarticleNum
 		where 
-			rnum between #startArticleNum# and #endarticleNum#
+			rnum between #startArticleNum# and #endArticleNum#
 		
 		group by
 			b.idx,
@@ -163,6 +163,23 @@
 	    order by 
 	    	b.idx desc		
 	</select>
+	
+	<select id="getOneArticel" parameterClass="int" resultClass="BoardModel">
+
+		select 
+			idx,
+			writer,
+			subject,
+			hitcount,
+			recommendcount,
+			writedate,
+			writerId,
+			fileName
+		from 
+			jmboard_jjs
+    	where 
+    		idx = #idx#
+	</select>	
 	
 	
 	<select id="getCommentList" parameterClass="int" resultClass="BoardCommentModel">

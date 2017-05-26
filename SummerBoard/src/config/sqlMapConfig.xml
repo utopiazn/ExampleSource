@@ -24,7 +24,7 @@
 	</transactionManager>
 
 	<sqlMap resource="smboard/ibatis/member.xml"/>
-	<!-- <sqlMap resource="smboard/ibatis/board.xml"/>  -->
+	<sqlMap resource="smboard/ibatis/board.xml"/>
 	<sqlMap resource="smboard/ibatis/login.xml"/>
 
 

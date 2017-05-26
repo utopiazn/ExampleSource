@@ -10,8 +10,8 @@
     <!-- controllers -->
 	<bean id="loginController" 	class="smboard.login.controller.LoginController"/>
 	<bean id="memberController" class="smboard.member.controller.MemberController"/>    
-	<!-- <bean id="boardController"  class="smboard.board.controller.BoardController"/> 
-       -->
+	<bean id="boardController"  class="smboard.board.controller.BoardController"/> 
+    
        
        
     <!-- viewResolver -->        

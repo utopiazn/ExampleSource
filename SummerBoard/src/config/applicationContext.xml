@@ -53,9 +53,9 @@
     <bean id="memberService" class="smboard.member.service.MemberService">
     	<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"/>
     </bean>
-  <!--   
+   
     <bean id="boardService" class="smboard.board.service.BoardService">
     	<property name="sqlMapClientTemplate" ref="sqlMapClientTemplate"/>
     </bean> 
-        -->
+       
  </beans>      
