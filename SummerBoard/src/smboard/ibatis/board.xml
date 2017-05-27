@@ -89,7 +89,7 @@
 	</select>
 
 
-	<select id="getsearchTotalNum" resultClass="int">
+	<select id="getSearchTotalNum" resultClass="int">
 		
 		select 
 			count(idx)
